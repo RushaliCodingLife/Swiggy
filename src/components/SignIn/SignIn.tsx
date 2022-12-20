@@ -24,8 +24,13 @@ function SignIn() {
         console.log("Verify your name succesfully");
         console.log(emailId);
         console.log("Verify Email Sucessfully");
+        document.write('Login Successfully' + name + emailId);
+        // document.write(name);
+        // document.write(emailId);
 
     }
+
+
 
     return (
         <Box display={"flex"} flexDirection="column">
@@ -84,7 +89,7 @@ function SignIn() {
                         sx={{
                             backgroundColor: "white",
                             borderRadius: "24px",
-                            marginTop:'15px',
+                            marginTop: '15px',
 
                             "& .MuiInputBase-root": {
                                 fontSize: "18px",
@@ -93,6 +98,8 @@ function SignIn() {
                     />
 
                 </FormControl>
+
+
 
                 <FormControl>
                     <Button
@@ -115,7 +122,7 @@ function SignIn() {
                         </Typography>
                     </Button>
                 </FormControl>
-                
+
             </Box>
         </Box>
 
